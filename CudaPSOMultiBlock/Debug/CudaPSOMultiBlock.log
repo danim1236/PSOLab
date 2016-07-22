@@ -1,0 +1,549 @@
+﻿Build started 11/8/2013 5:15:54 PM.
+     1>Project "C:\Users\danim\workspace\PSOLab\CudaPSOMultiBlock\CudaPSOMultiBlock.vcxproj" on node 4 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I. /FIcuda_runtime.h /c C:\Users\danim\workspace\PSOLab\CudaPSOMultiBlock\PSOCuda.cu 
+       CudaBuild:
+         Compiling CUDA source file PSOCuda.cu...
+         cmd.exe /C "C:\Users\danim\AppData\Local\Temp\tmp5cf44ce25f1d45bb8d03b7bd1f335338.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g  -use_fast_math -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Ox /Zi  /MDd  " -o Debug\PSOCuda.cu.obj "C:\Users\danim\workspace\PSOLab\CudaPSOMultiBlock\PSOCuda.cu"
+         
+         C:\Users\danim\workspace\PSOLab\CudaPSOMultiBlock>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"  -G   --keep-dir Debug -maxrregcount=0 --ptxas-options=-v --machine 32 --compile -cudart static  -g  -use_fast_math -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Ox /Zi  /MDd  " -o Debug\PSOCuda.cu.obj "C:\Users\danim\workspace\PSOLab\CudaPSOMultiBlock\PSOCuda.cu" 
+         ptxas : info : 78067 bytes gmem, 88 bytes cmem[3]
+         ptxas : info : Function properties for _ZN6thrust9referenceI17curandStateXORWOWNS_10device_ptrIS1_EENS_16device_referenceIS1_EEEC1ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj9EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIvNS_6system4cuda6detail3tagENS_16device_referenceIvEENS_10device_ptrIvEEE3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES5_EC2IfEEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj1EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust18raw_reference_castINS_16device_referenceIfEEEENS_6detail13raw_referenceIKT_E4typeERS6_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIyEEPyyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiEC2ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj5EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIjEEjNS_6detail23device_generate_functorINS9_12fill_functorIjEEEENS3_20blocked_thread_arrayEEEEEvT_' for 'sm_30'
+         ptxas : info : Function properties for _ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIjEEjNS_6detail23device_generate_functorINS9_12fill_functorIjEEEENS3_20blocked_thread_arrayEEEEEvT_
+             48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 19 registers, 104 bytes cumulative stack size, 336 bytes cmem[0]
+         ptxas : info : Function properties for _ZN6thrust6detail14pointer_traitsINS_10device_ptrIjEEE3getES3_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrI17curandStateXORWOWEES2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiEpLEi
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e27_skipahead_sequence_scratchI17curandStateXORWOWLi5EEEvyPT_Pj
+             40 bytes stack frame, 40 bytes spill stores, 40 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrI17curandStateXORWOWEES2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIKfEEPS2_fNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiEC2ERKS4_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj7EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access11dereferenceINS_10device_ptrIjEEEENT_9referenceERKS4_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIfNS_10device_ptrIfEENS_16device_referenceIfEEEC1ERKS2_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail23device_generate_functorINS0_12fill_functorI17curandStateXORWOWEEEclIS3_EEvRKT_
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrIyEEyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiEdeEv
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIjNS_6system4cuda6detail3tagENS_16device_referenceIjEENS_10device_ptrIjEEE3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj3EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16raw_pointer_castINS_10device_ptrI17curandStateXORWOWEEEENS_6detail14pointer_traitsIT_E11raw_pointerERKS6_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_11use_defaultES7_EEPS2_S2_S6_NS_27random_access_traversal_tagENS_9referenceIS2_S8_S7_EEiE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrI17curandStateXORWOWEEPS2_S2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiE7advanceEi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust3minIjEET_RKS1_S3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIvNS_6system4cuda6detail3tagENS_11use_defaultES5_EC2IvEEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIKfNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEEC1IfEEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj8EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access11dereferenceINS_10device_ptrI17curandStateXORWOWEEEENT_9referenceERKS5_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES6_EEPffS5_NS_27random_access_traversal_tagENS_9referenceIfS7_S6_EEiE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj0EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16device_referenceIKfEC1ERKNS_10device_ptrIS1_EE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust9referenceIjNS_10device_ptrIjEENS_16device_referenceIjEEEadEv
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj4EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function 'k_IterateMultiBlock' for 'sm_30'
+         ptxas : info : Function properties for k_IterateMultiBlock
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 29 registers, 24576 bytes smem, 352 bytes cmem[0]
+         ptxas : info : Function properties for _ZN6thrust9referenceIKfNS_10device_ptrIS1_EENS_16device_referenceIS1_EEEC1ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrIfEEfNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiEpLEi
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e15__curand_matmatEPjS0_i
+             40 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIfEEPffNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiEC2ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrIjEEjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj2EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust18raw_reference_castINS_16device_referenceIyEEEENS_6detail13raw_referenceIKT_E4typeERS6_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIK17curandStateXORWOWNS_6system4cuda6detail3tagENS_16device_referenceIS2_EENS_10device_ptrIS2_EEEC1IS1_EEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIjEEPjjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiE7advanceEi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6system6detail7generic20select_system_detail10min_systemINS0_4cuda6detail3tagEEERT_RNS_16execution_policyIS8_EESC_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_7pointerIvNS_6system4cuda6detail3tagENS_11use_defaultES6_EEPvvS5_NS_27random_access_traversal_tagEviEC2ERKS8_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIyNS_6system4cuda6detail3tagENS_16device_referenceIyEENS_10device_ptrIyEEEC2IyEEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj6EEEEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrI17curandStateXORWOWEEjNS_6detail23device_generate_functorINSA_12fill_functorIS8_EEEENS3_20blocked_thread_arrayEEEEEvT_' for 'sm_30'
+         ptxas : info : Function properties for _ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrI17curandStateXORWOWEEjNS_6detail23device_generate_functorINSA_12fill_functorIS8_EEEENS3_20blocked_thread_arrayEEEEEvT_
+             144 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 52 registers, 208 bytes cumulative stack size, 384 bytes cmem[0]
+         ptxas : info : Function properties for _ZN6thrust6detail14pointer_traitsINS_10device_ptrIyEEE3getES3_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrIjEEjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiEdeEv
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e15_curand_uniformEj
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_10device_ptrI17curandStateXORWOWEEPS2_S2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIKfNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEEC1INS8_IfEEEERKT_PNS_6detail32enable_if_pointer_is_convertibleISD_SA_vE4typeE
+             24 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj9EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIvEEPvvNS_6system4cuda6detail3tagENS_27random_access_traversal_tagEviEC2ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES5_E3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj1EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIKfNS_10device_ptrIS1_EENS_16device_referenceIS1_EEEC2ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrIyEEyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj5EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIfEEjNS_6detail23device_generate_functorINS9_12fill_functorIfEEEENS3_20blocked_thread_arrayEEEEEvT_' for 'sm_30'
+         ptxas : info : Function properties for _ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIfEEjNS_6detail23device_generate_functorINS9_12fill_functorIfEEEENS3_20blocked_thread_arrayEEEEEvT_
+             48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 19 registers, 104 bytes cumulative stack size, 336 bytes cmem[0]
+         ptxas : info : Function properties for _ZN6thrust6detail14pointer_traitsINS_10device_ptrI17curandStateXORWOWEEE3getES4_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIfNS_6system4cuda6detail3tagENS_16device_referenceIfEENS_10device_ptrIfEEE3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e16__curand_matcopyEPjS0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIfNS_6system4cuda6detail3tagENS_16device_referenceIfEENS_10device_ptrIfEEEC1IfEEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust9referenceIyNS_10device_ptrIyEENS_16device_referenceIyEEEadEv
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj7EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access11dereferenceINS_10device_ptrIfEEEENT_9referenceERKS4_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEEC1IS1_EEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail23device_generate_functorINS0_12fill_functorIyEEEclIyEEvRKT_
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16device_referenceIjEC1ERKNS_10device_ptrIjEE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIjEEPjjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiEC2ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj3EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust18raw_reference_castINS_16device_referenceI17curandStateXORWOWEEEENS_6detail13raw_referenceIKT_E4typeERS7_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_11use_defaultES7_EEPS2_S2_S6_NS_27random_access_traversal_tagENS_9referenceIS2_S8_S7_EEiEC1ERKS9_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIyEEPyyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiE7advanceEi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6system6detail7generic13select_systemINS0_4cuda6detail3tagES6_EERNS_6detail17enable_if_definedINS7_14minimum_systemIT_T0_NS7_19minimum_type_detail14any_conversionESD_SD_SD_SD_SD_SD_SD_SD_SD_SD_SD_SD_SD_EEE4typeERNS_16execution_policyISA_EERNSI_ISB_EE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIvNS_6system4cuda6detail3tagENS_11use_defaultES5_E3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIKfNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEE11dereferenceEv
+             24 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj8EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access11dereferenceINS_10device_ptrIyEEEENT_9referenceERKS4_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES6_EEPffS5_NS_27random_access_traversal_tagENS_9referenceIfS7_S6_EEiEC1ERKS8_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj0EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16device_referenceIyEC1ERKNS_10device_ptrIyEE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIjNS_6system4cuda6detail3tagENS_16device_referenceIjEENS_10device_ptrIjEEEC2IjEEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj4EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16raw_pointer_castINS_10device_ptrIyEEEENS_6detail14pointer_traitsIT_E11raw_pointerERKS5_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_11use_defaultES6_EC1IS1_EEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail14pointer_traitsINS_10device_ptrIfEEE3getES3_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust3maxIPfEET_RKS2_S4_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrIfEEfNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust9referenceIfNS_7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES6_EES6_EadEv
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj2EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust18raw_reference_castINS_16device_referenceIjEEEENS_6detail13raw_referenceIKT_E4typeERS6_
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIK17curandStateXORWOWEEPS3_S2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS3_EEiEC1ERKS5_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIfEEPffNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiE7advanceEi
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail12derived_castINS_6system4cuda6detail3tagEEERT_RNS0_21execution_policy_baseIS6_EE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIvNS_6system4cuda6detail3tagENS_16device_referenceIvEENS_10device_ptrIvEEEC2INS7_IfEEEERKT_PNS_6detail32enable_if_pointer_is_convertibleISC_S9_vE4typeE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIyNS_6system4cuda6detail3tagENS_16device_referenceIyEENS_10device_ptrIyEEE3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj6EEC2Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIyEEjNS_6detail23device_generate_functorINS9_12fill_functorIyEEEENS3_20blocked_thread_arrayEEEEEvT_' for 'sm_30'
+         ptxas : info : Function properties for _ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIyEEjNS_6detail23device_generate_functorINS9_12fill_functorIyEEEENS3_20blocked_thread_arrayEEEEEvT_
+             64 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 19 registers, 120 bytes cumulative stack size, 344 bytes cmem[0]
+         ptxas : info : Function properties for _ZNK6thrust6detail12fill_functorIjEclEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIfNS_10device_ptrIfEENS_16device_referenceIfEEEC2ERKS2_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e11curand_initEyyyP17curandStateXORWOW
+             6440 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrI17curandStateXORWOWEEPS2_S2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiEC1ERKS4_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust9referenceI17curandStateXORWOWNS_10device_ptrIS1_EENS_16device_referenceIS1_EEEadEv
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail12derived_castINS_6system3cpp6detail3tagEEERT_RNS0_21execution_policy_baseIS6_EE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIvNS_6system4cuda6detail3tagENS_16device_referenceIvEENS_10device_ptrIvEEEC1INS7_IfEEEERKT_PNS_6detail32enable_if_pointer_is_convertibleISC_S9_vE4typeE
+             24 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIfNS_7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES6_EES6_EC2ERKS7_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj2EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust6detail15device_functionINS0_23device_generate_functorINS0_12fill_functorIjEEEEvEclINS_16device_referenceIjEEEEvRKT_
+             8 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_10device_ptrIyEEPyyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj6EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIjEEiNS_6detail23device_generate_functorINS9_12fill_functorIjEEEENS3_20blocked_thread_arrayEEEEEvT_' for 'sm_30'
+         ptxas : info : Function properties for _ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIjEEiNS_6detail23device_generate_functorINS9_12fill_functorIjEEEENS3_20blocked_thread_arrayEEEEEvT_
+             48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 19 registers, 104 bytes cumulative stack size, 336 bytes cmem[0]
+         ptxas : info : Function properties for _ZN6thrust6detail23device_generate_functorINS0_12fill_functorIfEEEclIfEEvRKT_
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16device_referenceI17curandStateXORWOWEC1ERKNS_10device_ptrIS1_EE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e20_curand_init_scratchEyyyP17curandStateXORWOWPj
+             24 bytes stack frame, 20 bytes spill stores, 20 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrI17curandStateXORWOWEES2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_10device_ptrIKfEEPS2_fNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj8EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access7advanceINS_10device_ptrIyEEEEvRT_NS4_15difference_typeE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust9referenceIfNS_10device_ptrIfEENS_16device_referenceIfEEEadEv
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj0EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrIyEEyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiEpLEi
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIjNS_6system4cuda6detail3tagENS_16device_referenceIjEENS_10device_ptrIjEEEC1IjEEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj4EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16raw_pointer_castINS_10device_ptrIjEEEENS_6detail14pointer_traitsIT_E11raw_pointerERKS5_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_11use_defaultES6_E3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEE11dereferenceEv
+             24 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust3minIPfEET_RKS2_S4_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrIfEEfNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIKfNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEEC2IfEEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj9EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIvEEPvvNS_6system4cuda6detail3tagENS_27random_access_traversal_tagEviEC1ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES5_E11dereferenceEv
+             24 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj1EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceI17curandStateXORWOWNS_10device_ptrIS1_EENS_16device_referenceIS1_EEEC2ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrIyEEyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj5EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_Z9k_minimumiPfS_' for 'sm_30'
+         ptxas : info : Function properties for _Z9k_minimumiPfS_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 10 registers, 8192 bytes smem, 332 bytes cmem[0]
+         ptxas : info : Function properties for _ZNK6thrust9referenceIKfNS_10device_ptrIS1_EENS_16device_referenceIS1_EEEadEv
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16device_referenceIfEC1ERKNS_10device_ptrIfEE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e16__curand_veccopyEPjS0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_10device_ptrIfEEPffNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIjEEPjjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiEC1ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj3EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust6detail15device_functionINS0_23device_generate_functorINS0_12fill_functorI17curandStateXORWOWEEEEvEclINS_16device_referenceIS4_EEEEvRKT_
+             8 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIK17curandStateXORWOWNS_6system4cuda6detail3tagENS_16device_referenceIS2_EENS_10device_ptrIS2_EEEC2IS1_EEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIjNS_6system4cuda6detail3tagENS_16device_referenceIjEENS_10device_ptrIjEEE11dereferenceEv
+             24 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6system6detail7generic13select_systemINS0_3cpp6detail3tagES6_EERNS_6detail17enable_if_definedINS7_14minimum_systemIT_T0_NS7_19minimum_type_detail14any_conversionESD_SD_SD_SD_SD_SD_SD_SD_SD_SD_SD_SD_SD_EEE4typeERNS_16execution_policyISA_EERNSI_ISB_EE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_7pointerIvNS_6system4cuda6detail3tagENS_11use_defaultES6_EEPvvS5_NS_27random_access_traversal_tagEviE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIyNS_10device_ptrIyEENS_16device_referenceIyEEEC1ERKS2_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional8argumentILj7EEC1Ev
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access7advanceINS_10device_ptrIfEEEEvRT_NS4_15difference_typeE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust6detail12fill_functorIyEclEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrIjEEjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiEpLEi
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e14curand_uniformEP17curandStateXORWOW
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEE3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIKfNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEEC2INS8_IfEEEERKT_PNS_6detail32enable_if_pointer_is_convertibleISD_SA_vE4typeE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj9EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_10device_ptrIvEEPvvNS_6system4cuda6detail3tagENS_27random_access_traversal_tagEviE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES5_EC1IfEEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj1EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust6detail15device_functionINS0_23device_generate_functorINS0_12fill_functorIfEEEEvEclINS_16device_referenceIfEEEEvRKT_
+             8 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIyEEPyyNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIyEEiEC1ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj5EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIfEEiNS_6detail23device_generate_functorINS9_12fill_functorIfEEEENS3_20blocked_thread_arrayEEEEEvT_' for 'sm_30'
+         ptxas : info : Function properties for _ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIfEEiNS_6detail23device_generate_functorINS9_12fill_functorIfEEEENS3_20blocked_thread_arrayEEEEEvT_
+             48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 19 registers, 104 bytes cumulative stack size, 336 bytes cmem[0]
+         ptxas : info : Function properties for _ZNK6thrust6detail12fill_functorIfEclEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrI17curandStateXORWOWEES2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiEdeEv
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e18_skipahead_scratchI17curandStateXORWOWLi5EEEvyPT_Pj
+             48 bytes stack frame, 44 bytes spill stores, 44 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIfNS_6system4cuda6detail3tagENS_16device_referenceIfEENS_10device_ptrIfEEEC2IfEEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIKfEEPS2_fNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiEC1ERKS4_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj7EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access7advanceINS_10device_ptrIjEEEEvRT_NS4_15difference_typeE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEEC2IS1_EEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust6detail12fill_functorI17curandStateXORWOWEclEv
+             48 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIjNS_10device_ptrIjEENS_16device_referenceIjEEEC2ERKS2_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust16iterator_adaptorINS_10device_ptrIjEEPjjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiE4baseEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj3EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16raw_pointer_castINS_10device_ptrIfEEEENS_6detail14pointer_traitsIT_E11raw_pointerERKS5_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_11use_defaultES7_EEPS2_S2_S6_NS_27random_access_traversal_tagENS_9referenceIS2_S8_S7_EEiEC2ERKS9_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIyNS_6system4cuda6detail3tagENS_16device_referenceIyEENS_10device_ptrIyEEE11dereferenceEv
+             24 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust3maxIjEET_RKS1_S3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIvNS_6system4cuda6detail3tagENS_11use_defaultES5_EC1IvEEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIKfNS_6system4cuda6detail3tagENS_16device_referenceIS1_EENS_10device_ptrIS1_EEE3getEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj8EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust20iterator_core_access7advanceINS_10device_ptrI17curandStateXORWOWEEEEvRT_NS5_15difference_typeE
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES6_EEPffS5_NS_27random_access_traversal_tagENS_9referenceIfS7_S6_EEiEC2ERKS8_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj0EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIyNS_10device_ptrIyEENS_16device_referenceIyEEEC2ERKS2_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIjNS_10device_ptrIjEENS_16device_referenceIjEEEC1ERKS2_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj4EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_Z9k_InitPSOiPfS_S_S_S_S_P17curandStateXORWOW' for 'sm_30'
+         ptxas : info : Function properties for _Z9k_InitPSOiPfS_S_S_S_S_P17curandStateXORWOW
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 31 registers, 6552 bytes cumulative stack size, 24576 bytes smem, 352 bytes cmem[0]
+         ptxas : info : Function properties for _ZN6thrust7pointerI17curandStateXORWOWNS_6system4cuda6detail3tagENS_11use_defaultES6_EC2IS1_EEPT_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust15iterator_facadeINS_10device_ptrIfEEfNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiEdeEv
+             16 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e15__curand_matvecEPjS0_S0_i
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIfEEPffNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIfEEiEC1ERKS3_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust15iterator_facadeINS_10device_ptrIjEEjNS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIjEEiE7derivedEv
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj2EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust6detail15device_functionINS0_23device_generate_functorINS0_12fill_functorIyEEEEvEclINS_16device_referenceIyEEEEvRKT_
+             8 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrIK17curandStateXORWOWEEPS3_S2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS3_EEiEC2ERKS5_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZNK6thrust7pointerIfNS_6system4cuda6detail3tagENS_16device_referenceIfEENS_10device_ptrIfEEE11dereferenceEv
+             24 bytes stack frame, 4 bytes spill stores, 4 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6system6detail7generic20select_system_detail10min_systemINS0_3cpp6detail3tagEEERT_RNS_16execution_policyIS8_EESC_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_7pointerIvNS_6system4cuda6detail3tagENS_11use_defaultES6_EEPvvS5_NS_27random_access_traversal_tagEviEC1ERKS8_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust7pointerIyNS_6system4cuda6detail3tagENS_16device_referenceIyEENS_10device_ptrIyEEEC1IyEEPT_
+             8 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust6detail10functional5actorINS1_8argumentILj6EEEEC1Ev
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Compiling entry function '_ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIyEEiNS_6detail23device_generate_functorINS9_12fill_functorIyEEEENS3_20blocked_thread_arrayEEEEEvT_' for 'sm_30'
+         ptxas : info : Function properties for _ZN6thrust6system4cuda6detail6detail23launch_closure_by_valueINS2_17for_each_n_detail18for_each_n_closureINS_10device_ptrIyEEiNS_6detail23device_generate_functorINS9_12fill_functorIyEEEENS3_20blocked_thread_arrayEEEEEvT_
+             64 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Used 19 registers, 120 bytes cumulative stack size, 344 bytes cmem[0]
+         ptxas : info : Function properties for _ZN6thrust6detail23device_generate_functorINS0_12fill_functorIjEEEclIjEEvRKT_
+             8 bytes stack frame, 8 bytes spill stores, 8 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust9referenceIfNS_7pointerIfNS_6system4cuda6detail3tagENS_11use_defaultES6_EES6_EC1ERKS7_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN64_INTERNAL_42_tmpxft_00003498_00000000_5_PSOCuda_cpp1_ii_01e6487e6curandEP17curandStateXORWOW
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+         ptxas : info : Function properties for _ZN6thrust16iterator_adaptorINS_10device_ptrI17curandStateXORWOWEEPS2_S2_NS_6system4cuda6detail3tagENS_27random_access_traversal_tagENS_16device_referenceIS2_EEiEC2ERKS4_
+             0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+     1>C:/Users/danim/workspace/PSOLab/CudaPSOMultiBlock/PSOCuda.cu(298): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:/Users/danim/workspace/PSOLab/CudaPSOMultiBlock/PSOCuda.cu(299): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:/Users/danim/workspace/PSOLab/CudaPSOMultiBlock/PSOCuda.cu(317): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:/Users/danim/workspace/PSOLab/CudaPSOMultiBlock/PSOCuda.cu(318): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /Zi /nologo /W3 /WX- /Ox /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /MDd /GS /arch:AVX /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\CppPSO\PSOBase.cpp Main.cpp
+         Main.cpp
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include\thrust/system/detail/error_category.inl(102): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(112): warning C4244: '=' : conversion from 'uint64' to 'uint32', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(113): warning C4244: '+=' : conversion from 'uint64' to 'unsigned int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(125): warning C4244: '=' : conversion from 'uint64' to 'uint32', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(126): warning C4244: '+=' : conversion from 'uint64' to 'unsigned int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(133): warning C4244: '=' : conversion from 'uint64' to 'uint32', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(134): warning C4244: '+=' : conversion from 'uint64' to 'unsigned int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(146): warning C4244: '=' : conversion from 'uint64' to 'uint32', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(147): warning C4244: '+=' : conversion from 'uint64' to 'unsigned int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(154): warning C4244: 'initializing' : conversion from 'uint64' to 'int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(155): warning C4244: '=' : conversion from 'uint64' to 'int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(158): warning C4244: '+=' : conversion from 'uint64' to 'unsigned int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(172): warning C4244: 'initializing' : conversion from 'uint64' to 'int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(173): warning C4244: '=' : conversion from 'uint64' to 'int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_philox4x32_x.h(176): warning C4244: '+=' : conversion from 'uint64' to 'unsigned int', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(127): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(159): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(170): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(171): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(172): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(173): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(174): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(175): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(188): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(205): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(206): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(207): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(208): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(209): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(210): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(221): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(715): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(718): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(737): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(740): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(760): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(769): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(790): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(793): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(592): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+                 c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(718) : see reference to function template instantiation 'unsigned int curand_poisson_gammainc<curandStateXORWOW_t*>(T,float)' being compiled
+                 with
+                 [
+                     T=curandStateXORWOW_t *
+                 ]
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(592): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(594): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(612): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+                 c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(769) : see reference to function template instantiation 'uint4 curand_poisson_gammainc4<curandStatePhilox4_32_10_t*>(T,float)' being compiled
+                 with
+                 [
+                     T=curandStatePhilox4_32_10_t *
+                 ]
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(612): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(614): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(625): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(625): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(627): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(638): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(638): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(640): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(651): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(651): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\curand_poisson.h(653): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         PSOBase.cpp
+     1>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include\thrust/system/detail/error_category.inl(102): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(164) : see declaration of 'strerror'
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\danim\workspace\PSOLab\Debug\CudaPSOMultiBlock.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\danim\workspace\PSOLab\Debug\CudaPSOMultiBlock.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\danim\workspace\PSOLab\Debug\CudaPSOMultiBlock.lib" /MACHINE:X86 Debug\PSOCuda.cu.obj
+         Debug\PSOBase.obj
+         Debug\Main.obj
+         CudaPSOMultiBlock.vcxproj -> C:\Users\danim\workspace\PSOLab\Debug\CudaPSOMultiBlock.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\danim\workspace\PSOLab\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\danim\workspace\PSOLab\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\danim\workspace\PSOLab\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart32_55.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart64_55.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\danim\workspace\PSOLab\CudaPSOMultiBlock\CudaPSOMultiBlock.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.25

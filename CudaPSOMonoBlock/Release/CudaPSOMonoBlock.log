@@ -1,0 +1,18 @@
+﻿Build started 11/7/2013 5:01:14 PM.
+     1>Project "C:\Users\danim\workspace\PSOLab\CudaPSOMonoBlock\CudaPSOMonoBlock.vcxproj" on node 3 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I. /FIcuda_runtime.h /c C:\Users\danim\workspace\PSOLab\CudaPSOMonoBlock\PSOCuda.cu 
+       CudaBuild:
+         Compiling CUDA source file PSOCuda.cu...
+         cmd.exe /C "C:\Users\danim\AppData\Local\Temp\tmp8b9da4ce3c134c0ea127024dc17abbf6.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\PSOCuda.cu.obj "C:\Users\danim\workspace\PSOLab\CudaPSOMonoBlock\PSOCuda.cu"
+         
+         C:\Users\danim\workspace\PSOLab\CudaPSOMonoBlock>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\PSOCuda.cu.obj "C:\Users\danim\workspace\PSOLab\CudaPSOMonoBlock\PSOCuda.cu" 
+     1>ptxas : error : Entry function '_Z9k_InitPSOiPfS_S_S_S_S_S_S_P17curandStateXORWOW' uses too much shared data (0x6038 bytes, 0x4000 max)
+     1>ptxas : error : Entry function 'k_IterateSingleBlock' uses too much shared data (0x8054 bytes, 0x4000 max)
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\BuildCustomizations\CUDA 5.5.targets(592,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\PSOCuda.cu.obj "C:\Users\danim\workspace\PSOLab\CudaPSOMonoBlock\PSOCuda.cu"" exited with code -1.
+     1>Done Building Project "C:\Users\danim\workspace\PSOLab\CudaPSOMonoBlock\CudaPSOMonoBlock.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:08.15

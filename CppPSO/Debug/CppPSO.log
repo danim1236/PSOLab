@@ -1,0 +1,33 @@
+﻿Build started 11/8/2013 5:15:54 PM.
+     1>Project "C:\Users\danim\workspace\PSOLab\CppPSO\CppPSO.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp PSOBase.cpp PSOCpp.cpp
+         PSOCpp.cpp
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\thrust\system\detail\error_category.inl(102): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(164) : see declaration of 'strerror'
+         PSOBase.cpp
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\thrust\system\detail\error_category.inl(102): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(164) : see declaration of 'strerror'
+         Main.cpp
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v5.5\include\thrust\system\detail\error_category.inl(102): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(164) : see declaration of 'strerror'
+     1>c:\users\danim\workspace\psolab\cpppso\main.cpp(21): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\danim\workspace\PSOLab\Debug\CppPSO.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\danim\workspace\PSOLab\Debug\CppPSO.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\danim\workspace\PSOLab\Debug\CppPSO.lib" /MACHINE:X86 Debug\Main.obj
+         Debug\PSOBase.obj
+         Debug\PSOCpp.obj
+         CppPSO.vcxproj -> C:\Users\danim\workspace\PSOLab\Debug\CppPSO.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\danim\workspace\PSOLab\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\danim\workspace\PSOLab\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\danim\workspace\PSOLab\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart32_55.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart64_55.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\danim\workspace\PSOLab\CppPSO\CppPSO.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.67
